@@ -38,6 +38,8 @@ void main()
 
     affiche(tab2D,ROW,COL);
 
+    printf("\n");
+
     for(int i=0;i<ROW;i++)
     { somme=0;
         for(int j=0;j<COL;j++)
@@ -48,7 +50,7 @@ void main()
         printf("La somme des elements de la ligne %d est %d\n", i+1,somme);
 
     }
-
+      printf("\n");
      for(int i=0;i<COL;i++)
     { somme=0;
         for(int j=0;j<ROW;j++)
@@ -58,6 +60,7 @@ void main()
         }
         printf("La somme des elements de la colonne %d est %d\n", i+1,somme);
     }
+     printf("\n");
     somme=0;
     j=0;
     for(i=0;i<ROW;i++){
@@ -66,5 +69,6 @@ void main()
         somme=somme+tmp;
         j++;
     }
-        printf("La somme de la diagonale vaut%d",somme);
+        printf("La somme de la diagonale est %d",somme);
 }
+
